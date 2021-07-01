@@ -22,6 +22,6 @@ app.get('/login', (req, res) => {
     res.render("login");
 })
 
-app.listen(3030, () => 
-    console.log("El servidor esta corriendo en el puerto 3030")
+app.listen(process.env.PORT || 3000, () => 
+    console.log("El servidor esta corriendo en el puerto " + process.env.PORT)
 );
