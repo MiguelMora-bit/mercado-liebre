@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.main-header{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    padding-bottom: 15px;
+}
+
+.busqueda{
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.cuotas{
+    text-align: right;
+    padding: 10px;
+}
+
+.navegacion{
+    display: none;
+}
+
+.navegacion ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.logo{
+    width: 200px;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+.titulares {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuento, .descripciones{
+    font-size: 16px;
+}
+
+.descuento{
+    color:#39b54a;
+}
+
+footer section i{
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #03264C;
+    text-align: center;
+}
+
+.burger-menu{
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+    max-width: 60px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: white;
+}
+
+footer section{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+h4{
+    text-align: left;
+    padding-left: 2%;
+}
+
+main section article i{
+    display: block;
+    margin: auto;
+    width:40px; 
+    height:40px;
+    border-radius:50%;
+    background-color: white;
+    border: solid 3px #39b54a;
+    color: #39b54a;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    text-align: center;
+}
+
+.fas, .fab{
+    line-height: 2;
+}
+
+.contenido{
+    background-color: white;
+    position: relative;
+    display: flex;
+    padding: 20px;
+}
+
+.precio{
+    flex-grow: 0.30;
+}
+
+.descuento{
+    flex-grow: 0.70;
+}
+
+.productos{
+    margin: 0px 10px 30px 10px ;
+}
+
+.productos:hover{
+    box-shadow: 0px 0px 20px rgb(100, 100, 100);
+}
+
+.productos:hover i{
+    transform: rotate(-90deg);
+    transition-duration: 0.5s;
+}
+
+.descripciones{
+    background-color: white;
+    visibility:hidden;
+    opacity:0;
+    transition:opacity 0.5s;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.productos:hover .descripciones{
+    visibility:visible;
+    opacity:1;
+}
+
+.copyright{
+    background-color: white;
+    padding: 20px 0px;
+}
+
+
+/* navegacion para tablets*/
+
+@media (min-width: 361px) {
+    .cabecera{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+/* navegacion para desktop*/
+
+@media (min-width: 769px) {
+
+    .burger-menu{
+        display: none;
+    }
+
+    .navegacion{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cabecera{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navegacion ul{
+        display: flex;
+    }
+
+    .navegacion li{
+        margin: 0 5px;
+        padding-top: 10px;
+    }
+
+    .cuotas{
+        max-width: 300px;
+        text-align: right;
+    }
+
+    .productos{
+        width: 45%;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .ultima-visita, .ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .cabecera, .navegacion{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .productos{
+        width: 20%;
+        margin: 0px;
+    }
+
+    .pie-pagina{
+        display: flex;
+        justify-content: space-around;
+        align-items:baseline;
+    }
+
+    .copyright{
+        padding: 40px;
+    }
+
+    .ofertas{
+        margin-bottom: 30px;
+    }
+}
