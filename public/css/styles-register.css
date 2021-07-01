@@ -64,6 +64,14 @@ button{
     font-size: 30px;
 }
 
+form input:required:valid {
+    border:3px solid palegreen;
+ }
+
+ form input:focus:invalid {
+    border:3px solid red;
+ }
+
 .botones{
     display: flex;
     justify-content: space-around;

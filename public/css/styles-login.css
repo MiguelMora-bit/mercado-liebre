@@ -17,6 +17,14 @@ form{
     font-size: 22px;
 }
 
+form input:required:valid {
+    border:3px solid palegreen;
+ }
+
+ form input:focus:invalid {
+    border:3px solid red;
+ }
+
 form input{
     width: 90%;
     display: block;

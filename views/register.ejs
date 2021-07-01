@@ -51,23 +51,23 @@
     <form>
         <h2>Crea tu cuenta</h2>
         <div class="informacion">
-            <input type="text" placeholder="Nombre y apellido">
-            <input type="text" placeholder="Nombre de usuario">
-            <input type="email" placeholder="Email">
+            <input required type="text" placeholder="Nombre y apellido">
+            <input required type="text" placeholder="Nombre de usuario">
+            <input required type="email" placeholder="Email">
 
             <label class="etiqueta" for="fecha">Fecha de nacimiento</label>
-            <input type="date" name="fecha" id="fecha">
+            <input required type="date" name="fecha" id="fecha">
 
-            <textarea name="Domicilio" id="" cols="30" rows="4" placeholder="Domicilio"></textarea>
+            <textarea required name="Domicilio" id="" cols="30" rows="4" placeholder="Domicilio"></textarea>
             
         </div>
         <label class="etiqueta" for="comprador">Perfil de usuario</label>
         <div class="perfil-usuario">
 
-            <input type="radio" name="perfil" id="comprador" value="Comprador">
-            <label for="comprador">Comprador</label>
+            <input required type="radio" name="perfil" id="comprador" value="Comprador">
+            <label required for="comprador">Comprador</label>
 
-            <input type="radio" name="perfil" id="vendedor" value="Vendedor">
+            <input required type="radio" name="perfil" id="vendedor" value="Vendedor">
             <label for="vendedor">Vendedor</label>
 
         </div>
@@ -76,27 +76,27 @@
 
         <div class="intereses-usuario">
 
-            <input type="checkbox" name="intereses" id="Electro" value="Electro">
+            <input required type="checkbox" name="intereses" id="Electro" value="Electro">
             <label for="Electro">Electro</label><br>
 
-            <input type="checkbox" name="intereses" id="Moda" value="Moda">
+            <input required type="checkbox" name="intereses" id="Moda" value="Moda">
             <label for="Moda">Moda</label><br>
 
-            <input type="checkbox" name="intereses" id="Hogar" value="Hogar">
+            <input required type="checkbox" name="intereses" id="Hogar" value="Hogar">
             <label for="Hogar">Hogar</label><br>
 
-            <input type="checkbox" name="intereses" id="Jugueteria" value="Jugueteria">
+            <input required type="checkbox" name="intereses" id="Jugueteria" value="Jugueteria">
             <label for="Jugueteria">Jugueteria</label><br>
 
-            <input type="checkbox" name="intereses" id="Vida-sana" value="Vida-sana">
+            <input required type="checkbox" name="intereses" id="Vida-sana" value="Vida-sana">
             <label for="Vida-sana">Vida sana</label>
 
         </div>
         <label class="etiqueta" for="foto-perfil">Foto de perfil</label>
-        <input class="foto" type="file" name="foto-perfil" id="foto" accept="image/png, image/jpeg, image/jpg" class=".custom-file-upload">
+        <input required class="foto" type="file" name="foto-perfil" id="foto" accept="image/png, image/jpeg, image/jpg" class=".custom-file-upload">
         <div class="pass">
-            <input type="password" name="password" id="password" placeholder="Contraseña">
-            <input type="password" name="passwordc" id="passwordc" placeholder="Confirmar contraseña">
+            <input required type="password" name="password" id="password" placeholder="Contraseña">
+            <input required type="password" name="passwordc" id="passwordc" placeholder="Confirmar contraseña">
 
         </div>
         <div class="botones">
